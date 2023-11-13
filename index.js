@@ -59,7 +59,7 @@ app.post(
         const renderImage = new RenderImage(tempPath, __dirname + "/img.svg");
         const svgBuf = await renderImage.trace();
         console.log("Svg buffer ready");
-        await sendMail('yurabrahamyan44@gmail.com', svgBuf);
+        await sendMail('info.avetisian@gmail.com', svgBuf);
         console.log("Email sent");
         res.end("Email with attachment is sent");
 })
